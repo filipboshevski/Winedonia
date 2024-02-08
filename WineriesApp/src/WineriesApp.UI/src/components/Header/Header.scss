@@ -1,0 +1,215 @@
+.header-parent {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 352px;
+    position: relative;
+    color: white;
+
+    &-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 352px;
+        width: 100%;
+    }
+
+    &-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.37);
+        box-shadow: 0 4px 15px 14px rgba(0, 0, 0, 0.36);
+        position: relative;
+        z-index: 100;
+
+        &-logo {
+            margin-left: 104px;
+            padding-top: 11px;
+
+            &-img {
+                width: 76px;
+                height: 76px;
+            }
+        }
+
+        &-pages {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 58px;
+            width: 546px;
+        }
+
+        &-menu {
+            display: none;
+            margin-top: 16px;
+            margin-right: 95px;
+            &-icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        &-page {
+            font-weight: 600;
+            font-size: 19px;
+            text-decoration: none;
+            color: white;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+            &-active {
+                color: #FFA1A1;
+            }
+
+            &:hover {
+                color: #FFA1A1;
+                text-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+
+    &-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        bottom: 45px;
+        left: 43px;
+        font-weight: 600;
+
+        &-rating {
+            color: #FFCB45;
+            font-size: 28px;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+
+            &-star {
+                width: 27px;
+                height: 25px;
+            }
+
+            &-text {
+                margin-left: 3px;
+                text-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        &-text {
+            font-size: 48px;
+            color: white;
+            text-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        &-center {
+            width: 100%;
+            align-items: center;
+            left: 0;
+            bottom: 52px;
+        }
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .header-navbar-custom {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+
+        &,
+        &-background {
+            height: 250px;
+        }
+
+        &-navbar-custom {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 15px 14px rgba(0, 0, 0, 0.7);
+            position: absolute;
+            z-index: 100;
+        }
+
+        &-navbar {
+            background: none;
+            box-shadow: none;
+            &-menu {
+                display: block;
+            }
+
+            &-pages {
+                display: none;
+            }
+
+            &-pages-responsive {
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+
+            &-page:not(:last-of-type) {
+                margin-bottom: 15px;
+            }
+
+            &-page {
+                font-size: 21px;
+            }
+        }
+
+        &-side-page {
+            bottom: 5px;
+        }
+
+        &-title-text {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header-title-center .header-title-text {
+        font-size: 38px;
+    }
+
+    .main-top-wineries-title {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .main-search-bar {
+        width: 552px !important;
+    }
+}
+
+@media screen and (min-width: 471px) and (max-width: 599px) {
+    .main-search-bar {
+        width: 427px !important;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 470px) {
+    .main-search-bar {
+        width: 397px !important;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .main-search-bar {
+        width: 342px !important;
+    }
+}

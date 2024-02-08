@@ -1,0 +1,182 @@
+.wines-container {
+    margin-top: 26px;
+    margin-left: 50px;
+    margin-bottom: 56px;
+    display: flex;
+
+    &-searchinput {
+        width: 261px;
+        border: 2px solid #C9C9C9;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+
+        & .search-bar-textbox {
+            width: 100%;
+            margin: 0 17px;
+
+            &-input {
+                width: 100%;
+            }
+        }
+    }
+
+    &-filter {
+        width: 261px;
+        margin-top: 18px;
+        border: 2px solid #C9C9C9;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+
+        &-rating {
+            &-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-img {
+                    width: 11.34px;
+                    height: 7.75px;
+                    margin-right: 23px;
+                    cursor: pointer;
+                }
+
+                &-paragraph {
+                    margin-left: 23px;
+                    font-weight: 600;
+                }
+            }
+
+            &-checkbox {
+                width: 215px;
+                display: flex;
+                flex-direction: column;
+
+                &-item {
+                    display: flex;
+                    margin-left: 23px;
+                    margin-bottom: 13px;
+
+                    &-label {
+                        margin-left: 9px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-filtered-content {
+        width: 100%;
+        height: 473px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 38px;
+        margin-right: 78px;
+        overflow-y: auto;
+
+        &-container {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        &-item {
+            width: 159px;
+            margin-bottom: 19px;
+            box-sizing: border-box;
+
+            &-img {
+                width: 159px;
+            }
+
+            &-paragraph {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &:not(:first-of-type) {
+                margin-left: 108px;
+            }
+        }
+
+        &::-webkit-scrollbar:vertical,
+        &::-webkit-scrollbar:horizontal {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track:vertical,
+        &::-webkit-scrollbar-track:horizontal {
+            box-shadow: inset 0 0 5px #7a7a7a;
+            border-radius: 12px;
+        }
+
+        &::-webkit-scrollbar-thumb:vertical,
+        &::-webkit-scrollbar-thumb:horizontal {
+            background: #7a7a7a;
+            border-radius: 12px;
+        }
+
+        &::-webkit-scrollbar-thumb:vertical:hover,
+        &::-webkit-scrollbar-thumb:horizontal:hover {
+            background: #515151; 
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wines-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+
+        &-input {
+            margin-bottom: 42px;
+        }
+
+        &-searchinput,
+        &-filter {
+            width: 467px;
+        }
+
+        &-filtered-content {
+            width: 467px;
+            margin: 0;
+
+            &-container {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .wines-container {
+        &-searchinput,
+        &-filter {
+            width: 301px;
+        }
+
+        &-filtered-content {
+            width: 400px;
+
+            &-item:not(:first-of-type) {
+                margin-left: 34px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .wines-container {
+
+        &-filtered-content {
+            width: 340px;
+
+            &-item:not(:first-of-type) {
+                margin-left: 0;
+            }
+        }
+    }
+}

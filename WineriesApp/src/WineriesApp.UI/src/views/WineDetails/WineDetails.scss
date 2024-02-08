@@ -1,0 +1,196 @@
+.wine-details-wrapper {
+    overflow-x: hidden;
+}
+
+.wine-details-container {
+
+    &-forwine, &-forwineries {
+
+        &-paragraph {
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+
+    &-forwine {
+        display: flex;
+        margin-left: 41px;
+    }
+
+    &-forrating {
+        display: flex;
+        margin-left: 41px;
+
+        &-paragraph {
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        &-add-review {
+            margin-left: 41px;
+        }
+
+        &-description {
+            width: 599px;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            font-size: 22px;
+            margin-left: 41px;
+            margin-bottom: 20px;
+
+            & p:first-of-type {
+                margin-top: 0px;
+            }
+        }
+
+        &-imageurl {
+            margin-right: 41px;
+
+            &-image {
+                width: 620px;
+                height: 391px;
+            }
+        }
+    }
+
+    &-wineries {
+        width: 100%;
+        margin-top: 38px;
+        margin-bottom: 15px;
+
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-container:not(:last-of-type) {
+            margin-bottom: 50px;
+        }
+
+        & .winery-preview:not(:first-of-type) {
+            margin-left: 71px;
+        }
+
+        &-links {
+            margin-top: 38px;
+            margin-bottom: 78px;
+    
+            &-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 24px;
+            }
+    
+            &-container:not(:last-of-type) {
+                margin-bottom: 50px;
+            }
+    
+            & .winery-preview:not(:first-of-type) {
+                margin-left: 71px;
+            }
+        }
+    }
+
+    &-reviews {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-left: 50px;
+
+       &-card {
+        width: 90%;
+        text-align: left;
+        padding: 10px 0;
+        
+            &:not(:last-of-type) {
+                margin-bottom: 15px;
+            }
+
+            &-rating {
+                
+                &-icon {
+                    width: 22px;
+                    height: 22px;
+                }
+
+                &-paragraph {
+                    font-size: 22px;
+
+                    &-from, &-guest {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            &-guest {
+                &-icon {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+        
+            &-comment {
+                margin-top: 10px;
+
+                &-paragraph {
+                    font-size: 18px;
+                }
+            }
+       }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .wine-details-container-forwine {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .wine-details-container-content {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wine-details-content-container {
+        width: 85%;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wine-details-container-content-description {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .wine-details-container-content-imageurl {
+        margin-right: 0;
+    }
+
+    .wine-details-container-content-add-review {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wine-details-container-content-add-review {
+        width: 85%;
+    }
+
+    .wine-details-container-wineries-links-container {
+        margin-right: 0;
+    }
+}

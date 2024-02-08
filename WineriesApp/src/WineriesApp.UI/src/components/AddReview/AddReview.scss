@@ -1,0 +1,32 @@
+.add-review {
+    width: 452px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    &-rating {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    &-select {
+        margin-bottom: 5px;
+    }
+
+    &-comment {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+
+        &-textarea {
+            width: 98%;
+            height: 100px;
+        }
+    }
+
+    &-submit {
+        margin-top: 15px;
+    }
+}

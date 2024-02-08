@@ -1,0 +1,114 @@
+.search-bar {
+    width: 694px;
+    height: 47px;
+    background: white;
+    border: 1.5px solid #c9c9c9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+    border-radius: 12px;
+
+    &-textbox {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        margin-left: 17px;
+
+        &-icon {
+            width: 14px;
+            height: 15px;
+        }
+
+        &-input {
+            width: 70%;
+            margin-left: 8px;
+            border: none;
+            padding: 10px 0;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &-filter {
+        width: 157px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+
+        &-separator {
+            width: 1px;
+            height: 24px;
+            background: rgba($color: #d0d0d0, $alpha: 0.5);
+        }
+
+        &-input {
+            width: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            &-icon {
+                width: 13.9px;
+                height: 20px;
+                margin-top: 5px;
+            }
+
+            #search-form-control {
+                margin-left: 13.1px;
+            }
+
+            #search-multiple-locations {
+                font-size: 13px;
+            }
+
+            & [class*="MuiInputBase-root-MuiInput-root-MuiSelect-root"] {
+                margin-top: 4px;
+            }
+        }
+
+        &-star-icon {
+            width: 15.28px;
+            height: 14.72px;
+            margin-top: 5px;
+        }
+
+        &-submit {
+            margin-right: 22px;
+
+            &-btn {
+                width: 84px;
+                height: 28.5px;
+                border-radius: 12px;
+                background: #323629;
+                color: white;
+                font-weight: 600;
+                font-size: 10.5px;
+                cursor: pointer;
+                border: 1px solid #323629;
+            }
+        }
+    }
+
+    &-optionals-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+#search-form-control {
+    position: relative;
+    width: 101px;
+}
+
+.search-form-control-placeholder {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    font-size: 13px;
+    color: #797979;
+}

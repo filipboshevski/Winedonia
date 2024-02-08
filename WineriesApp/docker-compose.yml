@@ -1,0 +1,14 @@
+version: '1.0'
+
+services:
+  sql-db:
+    container_name: sql.db
+    hostname: sql-db
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    pull_policy: missing
+    environment:
+      "ACCEPT_EULA": "Y"
+      "MSSQL_SA_PASSWORD": ${MSSQL_SA_PASSWORD}
+      "MSSQL_PID": ${MSSQL_PID}
+    ports:
+      - "1433:1433"
