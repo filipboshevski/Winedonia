@@ -1,0 +1,20 @@
+.tad-container {
+    &-paragraph {
+        font-size: 22px;
+        text-align: left;
+        margin-left: 50px;
+        margin-bottom: 43px;
+
+        &-link {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tad-container {
+        &-paragraph {
+           font-size: 19px;
+        }
+    }
+}

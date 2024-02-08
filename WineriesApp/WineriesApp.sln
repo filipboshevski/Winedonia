@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WineriesApp.Api", "src\WineriesApp.Api\WineriesApp.Api.csproj", "{6035A508-F09D-4E5C-9B4D-85FEADE58B8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2DFDD260-06E8-47E0-AA4A-B46F1227F873}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WineriesApp.Services", "src\WineriesApp.Services\WineriesApp.Services.csproj", "{E4DCE9F9-66D7-4572-88CB-5C3EB09CEF5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FABACC92-5FE1-42D3-8D25-C3628CAC35ED}"
+	ProjectSection(SolutionItems) = preProject
+		.env = .env
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WineriesApp.DataContext", "src\WineriesApp.DataContext\WineriesApp.DataContext.csproj", "{28546A48-3C74-427D-B5BA-EFC307C436E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WineriesApp.Common", "src\WineriesApp.Common\WineriesApp.Common.csproj", "{22ED0ADA-F318-437D-845D-C6AC07C55417}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6035A508-F09D-4E5C-9B4D-85FEADE58B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6035A508-F09D-4E5C-9B4D-85FEADE58B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6035A508-F09D-4E5C-9B4D-85FEADE58B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6035A508-F09D-4E5C-9B4D-85FEADE58B8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4DCE9F9-66D7-4572-88CB-5C3EB09CEF5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4DCE9F9-66D7-4572-88CB-5C3EB09CEF5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4DCE9F9-66D7-4572-88CB-5C3EB09CEF5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4DCE9F9-66D7-4572-88CB-5C3EB09CEF5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28546A48-3C74-427D-B5BA-EFC307C436E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28546A48-3C74-427D-B5BA-EFC307C436E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28546A48-3C74-427D-B5BA-EFC307C436E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28546A48-3C74-427D-B5BA-EFC307C436E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22ED0ADA-F318-437D-845D-C6AC07C55417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22ED0ADA-F318-437D-845D-C6AC07C55417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22ED0ADA-F318-437D-845D-C6AC07C55417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22ED0ADA-F318-437D-845D-C6AC07C55417}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6035A508-F09D-4E5C-9B4D-85FEADE58B8A} = {2DFDD260-06E8-47E0-AA4A-B46F1227F873}
+		{E4DCE9F9-66D7-4572-88CB-5C3EB09CEF5D} = {2DFDD260-06E8-47E0-AA4A-B46F1227F873}
+		{28546A48-3C74-427D-B5BA-EFC307C436E6} = {2DFDD260-06E8-47E0-AA4A-B46F1227F873}
+		{22ED0ADA-F318-437D-845D-C6AC07C55417} = {2DFDD260-06E8-47E0-AA4A-B46F1227F873}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AEA4579-B897-49B9-9955-794F4854A399}
+	EndGlobalSection
+EndGlobal

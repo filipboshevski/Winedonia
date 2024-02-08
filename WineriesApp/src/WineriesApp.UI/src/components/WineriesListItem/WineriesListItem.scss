@@ -1,0 +1,63 @@
+.wineries-list-container {
+    width: 583px;
+    border: 1px solid #C9C9C9;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    border-radius: 12px;
+
+    &-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 30px;
+
+            &-location {
+                width: 14.81px;
+                height: 20px;
+                margin-right: 15.9px;
+            }
+
+            &-ratingicon {
+                width: 10.87px;
+                height: 8.72px;
+                margin-right: 3.56px;
+            }
+
+            &-rating {
+                margin-right: 15.48px;
+            }
+
+            &-rating, &-winery {
+                font-size: 19px;
+            }
+
+            &-winery {
+                width: 250px;
+                overflow-x: clip;
+                text-wrap: nowrap;
+                text-overflow: ellipsis;
+                text-align: left;
+            }
+        }
+
+        &-right {
+            margin-right: 13.83px;
+
+            &-button {
+                width: 100px;
+                padding: 10px;
+                font-size: 10.5px;
+                border-radius: 12px;
+                border: none;
+                background-color: #41714E;
+                color: white;
+                text-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}

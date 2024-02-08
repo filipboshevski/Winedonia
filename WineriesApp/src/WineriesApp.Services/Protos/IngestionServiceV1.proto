@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+option csharp_namespace = "Search.Api.Protos";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+service IngestionV1 {
+    rpc FuzzySearch (FuzzySearchRequest) returns (FuzzySearchResponse);
+    rpc IngestDocuments (IngestDocumentsRequest) returns (google.protobuf.Empty);
+    rpc IndexIsEmpty (IndexIsEmptyRequest) returns (IndexIsEmptyResponse);
+}
+
+message FuzzySearchRequest {
+    EntityType entity_type = 1;
+    google.protobuf.StringValue search_term = 2;
+    repeated google.protobuf.StringValue ratings = 3;
+    repeated google.protobuf.StringValue locations = 4;
+    optional google.protobuf.Int32Value page_index = 5;
+    optional google.protobuf.Int32Value page_size = 6;
+}
+
+message FuzzySearchResponse {
+    repeated Document documents = 1;
+    int32 count = 2;
+}
+
+message IngestDocumentsRequest {
+    repeated Document documents = 1;
+    ActionType action_type = 2;
+    EntityType entity_type = 3;
+}
+
+message IndexIsEmptyRequest {
+    EntityType entity_type = 1;
+}
+
+message IndexIsEmptyResponse {
+    bool is_empty = 1;
+}
+
+message Document {
+    string id = 1;
+    string name = 2;
+    double rating = 3;
+    google.protobuf.StringValue location = 4;
+}
+
+enum EntityType
+{
+    ENTITY_TYPE_WINERY = 0;
+    ENTITY_TYPE_WINE = 1;
+}
+
+enum ActionType
+{
+    ACTION_TYPE_INGEST = 0;
+    ACTION_TYPE_UPDATE = 1;
+}

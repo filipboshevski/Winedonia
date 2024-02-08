@@ -1,0 +1,258 @@
+.wineries-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-show-more-btn {
+        border: none;
+        border-radius: 12px;
+        width: 583px;
+        padding: 10px 0px;
+        font-size: 14px;
+        background: #41714e;
+        color: white;
+    }
+
+    &-inputbox {
+        margin-left: 50px;
+        margin-top: 32px;
+        margin-bottom: 29px;
+    }
+
+    &-inputbox-searchbar {
+        width: 583px;
+    }
+
+    &-map {
+        margin-right: 50px;
+
+        &-winery {
+            &-name {
+                font-size: 19px;
+            }
+            &-rating {
+                font-size: 11px;
+
+                &-img {
+                    width: 10.87px;
+                    height: 8.72px;
+                }
+            }
+            &-address, &-phone, &-website {
+                font-size: 11px;
+            }
+
+            &-website {
+                display: inline-block;
+            }
+        }
+
+        &-popup .leaflet-popup-content-wrapper {
+            background-color: #41714E;
+            color: white;
+        }
+
+        &-popup .leaflet-popup-content-wrapper a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            max-width: 301px;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+        }
+
+        &-popup .leaflet-popup-tip {
+            background-color: #3d6949;
+        }
+
+        &-popup .leaflet-popup-close-button span {
+            color: white;
+        }
+
+        &-container {
+            width: 633px;
+            height: 490px;
+        }
+    }
+
+    &-items {
+        width: 596px;
+        height: 413.28px;
+        display: flex;
+        margin-left: 50px;
+        margin-bottom: 32.72px;
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #7a7a7a;
+            border-radius: 12px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #7a7a7a;
+            border-radius: 12px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: #515151; 
+        }
+
+        &-empty {
+            text-align: left;
+            font-size: 19px;
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (min-width: 1130px) and (max-width: 1300px) {
+
+    .wineries-container {
+        & .leaflet-container {
+            width: 500px !important;
+        }
+    
+        & &-inputbox-searchbar {
+            width: 500px !important;
+        }
+    
+        & &-items {
+            width: 500px !important;
+        }
+    
+        & .wineries-list-container {
+            width: 500px !important;
+        }
+    
+        & .wineries-list-container-card-left-winery {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 1130px) {
+
+    .wineries-container {
+        & .leaflet-container {
+            width: 400px !important;
+        }
+    
+        & &-inputbox-searchbar {
+            width: 400px !important;
+        }
+    
+        & &-items {
+            width: 400px !important;
+        }
+    
+        & .wineries-list-container {
+            width: 400px !important;
+        }
+    
+        & .wineries-list-container-card-left .wineries-list-container-card-left-winery {
+            width: 99px;
+            overflow-x: clip;
+            text-wrap: nowrap;
+            text-overflow: ellipsis;
+            text-align: left;
+        }
+    
+        & .wineries-list-container-card-left .wineries-list-container-card-left-rating {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .wineries-container {
+        flex-direction: column;
+
+        & .leaflet-container {
+            width: 700px !important;
+        }
+
+        & &-inputbox-searchbar {
+            width: 700px !important;
+        }
+    
+        & &-items {
+            width: 700px !important;
+        }
+
+        & .wineries-list-container {
+            width: 700px !important;
+        }
+    
+        & .wineries-list-container-card-left .wineries-list-container-card-left-winery {
+            width: 200px;
+        }
+    
+        & &-inputbox,
+        & &-items {
+            margin-left: 0;
+        }
+    
+        & &-map {
+            margin-right: 0;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .wineries-container {
+        flex-direction: column;
+
+        & .leaflet-container {
+            width: 400px !important;
+        }
+    
+        & &-inputbox-searchbar {
+            width: 400px !important;
+        }
+    
+        & &-items {
+            width: 400px !important;
+        }
+    
+        & .wineries-list-container {
+            width: 400px !important;
+        }
+    
+        & .wineries-list-container-card-left .wineries-list-container-card-left-winery {
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .wineries-container {
+        flex-direction: column;
+
+        & .leaflet-container {
+            width: 300px !important;
+        }
+    
+        & &-inputbox-searchbar {
+            width: 300px !important;
+        }
+    
+        & &-items {
+            width: 300px !important;
+        }
+    
+        & .wineries-list-container {
+            width: 300px !important;
+        }
+    
+        & .wineries-list-container-card-left .wineries-list-container-card-left-winery {
+            width: 70px;
+        }
+    }
+}

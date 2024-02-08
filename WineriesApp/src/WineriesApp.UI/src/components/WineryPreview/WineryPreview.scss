@@ -1,0 +1,47 @@
+.winery-preview {
+    display: flex;
+    flex-direction: column;
+    width: 371px;
+
+    &-image {
+        width: 100%;
+    }
+
+    &-info {
+        display: flex;
+        align-items: center;
+        margin-left: 7px;
+        margin-top: 11px;
+
+        &-rating {
+            display: flex;
+            align-items: center;
+
+            &-star {
+                width: 12px;
+                height: 11px;
+            }
+
+            &-number {
+                font-size: 14px;
+                font-weight: 600;
+                margin-left: 5px;
+            }
+        }
+
+        &-name {
+            font-size: 18px;
+            margin-left: 11px;
+        }
+    }
+
+    &-description {
+        margin-top: 12px;
+        width: 100%;
+        text-align: justify;
+        overflow: hidden;
+        max-height: 76px;
+        color: #313131;
+        font-size: 12.9px;
+    }
+}

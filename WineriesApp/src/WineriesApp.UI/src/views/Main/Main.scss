@@ -1,0 +1,33 @@
+.main-search-bar {
+    margin-top: -14px;
+    z-index: 10;
+}
+
+.main-top-wineries {
+    margin: 0 55px;
+    margin-top: 47px;
+
+    &-title {
+        font-size: 38px;
+        font-weight: 600;
+    }
+
+    &-links {
+        margin-top: 38px;
+        margin-bottom: 78px;
+
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-container:not(:last-of-type) {
+            margin-bottom: 50px;
+        }
+
+        & .winery-preview:not(:first-of-type) {
+            margin-left: 71px;
+        }
+    }
+}
