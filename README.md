@@ -4,6 +4,8 @@
 
 It currently supports only **Macedonian**, however, there are plans to localize text for English as well.
 
+![alt_text][main_page]
+
 ## Microservices Architecture:
 
 - **Main App:** This microservice serves as the core of **Winedonia**, leveraging SQL Server as its database with EF Core. It ensures a seamless browsing experience, allowing users to explore detailed information about various Macedonian wines and wineries.
@@ -38,3 +40,5 @@ Clone the repository and embark on a journey to discover the exquisite world of 
 
 ## Original project repository link
 https://github.com/antoniostefanovski/Software-Design-and-Architecture
+
+[main_page]: https://raw.githubusercontent.com/filipboshevski/Winedonia/dev/main.png "Main"
